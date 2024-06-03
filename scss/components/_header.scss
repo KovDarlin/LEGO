@@ -1,0 +1,268 @@
+header {
+    /*+*/
+    background-color: #ffd500;
+    height: 500px;
+}
+
+.head-do {
+    /*+*/
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.all-st {
+    /*+*/
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.all-st li {
+    /*+*/
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.all-st a {
+    /*+*/
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "Darker Grotesque", sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.all-st a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+}
+
+.all-st a:hover::after {
+    width: 100%;
+    left: 0;
+    background: black;
+}
+
+.main-logo {
+    height: 50px;
+}
+
+.main-baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-baner h1 {
+    width: 50%;
+    font-size: 5.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-right: 100px;
+    text-shadow: 2px 2px 4px rgba(52, 50, 50, 0.4);
+    text-align: center;
+}
+
+.girl {
+    height: 500px;
+}
+
+@media (min-width:760px) and (max-width: 1050px) {
+    header {
+        height: 400px;
+    }
+
+    .all-st {
+        margin-left: 30px;
+    }
+
+    .all-st li {
+        margin-right: 20px;
+
+    }
+
+    .all-st a {
+        font-size: 20px;
+    }
+
+    .main-baner h1 {
+        font-size: 3.5em;
+    }
+
+    .girl {
+        height: 390px;
+    }
+}
+
+
+
+
+@media (min-width:655px) and (max-width: 760px) {
+    header {
+        height: 345px;
+    }
+
+    .all-st {
+        margin-left: 30px;
+    }
+
+    .all-st li {
+        margin-right: 20px;
+
+    }
+
+    .all-st a {
+        font-size: 18px;
+    }
+
+    .main-baner h1 {
+        font-size: 2.6em;
+    }
+
+    .main-logo {
+        height: 30px;
+    }
+
+    .girl {
+        height: 350px;
+    }
+}
+
+
+@media (min-width:590px) and (max-width: 655px) {
+    header {
+        height: 300px;
+    }
+
+    .all-st {
+        margin-left: 25px;
+    }
+
+    .all-st li {
+        margin-right: 20px;
+    }
+
+    .all-st a {
+        font-size: 16px;
+    }
+
+    .main-baner h1 {
+        font-size: 2.5em;
+    }
+
+    .main-logo {
+        height: 30px;
+    }
+
+    .girl {
+        height: 300px;
+    }
+}
+
+
+@media (min-width:480px) and (max-width:590px) {
+    header {
+        height: 250px;
+    }
+
+    .all-st {
+        margin-left: 20px;
+    }
+
+    .all-st li {
+        margin-right: 20px;
+    }
+
+    .all-st a {
+        font-size: 14px;
+    }
+
+    .main-baner h1 {
+
+        font-size: 2em;
+    }
+
+    .main-logo {
+        height: 30px;
+    }
+
+    .girl {
+        height: 235px;
+    }
+}
+
+@media (min-width:440px) and (max-width:480px) {
+    header {
+        height: 230px;
+    }
+
+    .all-st {
+        margin-left: 15px;
+    }
+
+    .all-st li {
+        margin-right: 15px;
+    }
+
+    .all-st a {
+        font-size: 12px;
+    }
+
+    .main-baner h1 {
+
+        font-size: 1.8em;
+    }
+
+    .main-logo {
+        height: 25px;
+    }
+
+    .girl {
+        height: 218px;
+    }
+}
+
+@media (max-width:440px) {
+    header {
+        height: 215px;
+    }
+
+    .all-st {
+        margin-left: 15px;
+    }
+
+    .all-st li {
+        margin-right: 15px;
+    }
+
+    .all-st a {
+        font-size: 11px;
+    }
+
+    .main-baner h1 {
+
+        font-size: 1.6em;
+    }
+
+    .main-logo {
+        height: 20px;
+    }
+
+    .girl {
+        width: 48%;
+        height: 208px;
+    }
+
+    .head-do {
+        padding: 10px 10px;
+    }
+}

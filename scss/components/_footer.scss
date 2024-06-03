@@ -1,0 +1,105 @@
+.footer {
+    background: #04055e;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: rgb(252, 252, 252);
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer .row a:hover {
+    color: #ffd500;
+}
+
+.footer .row ul {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.last-text {
+    font-size: 0.6em;
+    color: white;
+    text-align: left;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.darina {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Медиа-запрос для планшетов и небольших экранов */
+@media (min-width: 648px) and (max-width: 968px) {
+    .footer .last-text {
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .footer .row ul li {
+        margin: 0px 15px;
+    }
+
+    .footer .row a i {
+        font-size: 1.5em;
+    }
+
+    .last-text {
+        font-size: 0.5em;
+
+    }
+}
+
+
+@media (max-width: 648px) {
+    .footer {
+        padding: 20px 0px;
+    }
+
+    .footer .row {
+        font-size: 0.5em;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+    }
+
+    .footer .last-text {
+        font-size: 0.3em;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .footer .row a i {
+        font-size: 1.2em;
+    }
+
+    .darina {
+        font-size: 0.4em;
+    }
+}

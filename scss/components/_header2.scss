@@ -1,0 +1,134 @@
+header {
+    background-color: #ffd500;
+    padding: 10px 20px;
+}
+
+.head-do {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.all-st {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.all-st li {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.all-st a {
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "Darker Grotesque", sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.all-st a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+.all-st a:hover::after {
+    width: 100%;
+    left: 0;
+    background: black;
+}
+
+.main-logo {
+    height: 50px;
+}
+
+.main-baner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img-baner {
+    width: 100%;
+    height: auto;
+}
+
+.baner-text {
+    width: 60%;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Медиа-запрос для экранов шириной от 648px до 968px */
+@media (min-width: 648px) and (max-width: 968px) {
+    .baner-text {
+        width: 50%;
+        font-size: 20px;
+        left: 10px;
+        padding: 5px;
+    }
+}
+
+/* Медиа-запрос для экранов шириной до 648px */
+@media (max-width: 648px) {
+    .baner-text {
+        width: 60%;
+        font-size: 12px;
+
+    }
+}
+
+
+@media (min-width:648px) and (max-width: 968px) {
+    .logo {
+        margin-right: 40px;
+    }
+
+    .all-st li {
+        margin-right: 30px;
+    }
+
+    .all-st a {
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width:648px) {
+    header {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .all-st li {
+        margin-right: 10px;
+    }
+
+    .all-st a {
+        font-size: 15px;
+    }
+}
